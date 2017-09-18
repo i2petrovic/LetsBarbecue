@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Lets Barbecue</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="naslov_aplikacije">Let\'s Barbecue</string>
+    <string name="button_kreiraj_dogadaj_tekst">Kreiraj Dogadaj</string>
+    <string name="button_pregled_dogadaja_tekst">Pregled Dogadaja</string>
+    <string name="title_activity_tab">TabActivity</string>
+    <string name="znak_plus">+</string>
+    <string name="kolicina_tekst">Kolicina</string>
+    <string name="opis_pocetne">Unesite informacije za vas dogadaj:</string>
+    <string name="ime_dogadaja">Ime Dogadaja:</string>
+
+</resources>

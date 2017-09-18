@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/listColor">
+
+
+    <TextView
+        android:id="@+id/tvItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="15dp"
+        android:text="TextView"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/tvJedinica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"/>
+
+    <Button
+        android:id="@+id/bAdd"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvJedinica"
+        android:layout_alignBottom="@+id/tvJedinica"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@color/buttonColor"
+        android:onClick="bAdd"
+        android:text="@string/znak_plus"
+        android:textColor="@color/white" />
+
+    <EditText
+        android:id="@+id/etKolicina"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/bAdd"
+        android:layout_toStartOf="@+id/bAdd"
+        android:layout_marginRight="10dp"
+        android:ems="10"
+        android:hint="@string/kolicina_tekst"
+        android:inputType="number"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/tvCijena"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvJedinica"
+        android:layout_alignBottom="@+id/tvJedinica"
+        android:layout_toLeftOf="@+id/tvJedinica"
+        android:layout_toStartOf="@+id/tvJedinica"
+        android:text="TextView"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:layout_marginRight="3dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layoutColor">
+
+
+    <ListView
+        android:id="@+id/lvPregled"
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+
+    <Button
+        android:id="@+id/bObjaviDogadaj"
+        android:layout_width="@dimen/wide_button"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bPrikaziListu"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:background="@color/buttonColor"
+        android:text="Objavi Dogadaj"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/tvUkupno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:text="Ukupno:"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/lvPregled"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="11dp"
+        android:layout_marginEnd="11dp" />
+
+    <Button
+        android:id="@+id/bPrikaziListu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bObjaviDogadaj"
+        android:layout_alignStart="@+id/bObjaviDogadaj"
+        android:layout_alignTop="@+id/tvUkupno"
+        android:background="@color/buttonColor"
+        android:text="Osvježi"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/bObrisi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/bPrikaziListu"
+        android:layout_alignBottom="@+id/bPrikaziListu"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_toEndOf="@+id/bPrikaziListu"
+        android:layout_toRightOf="@+id/bPrikaziListu"
+        android:text="Obrisi"
+        android:layout_alignTop="@+id/tvUkupno"
+        android:background="@color/buttonColor"
+        android:textColor="@color/white"/>
+</RelativeLayout>

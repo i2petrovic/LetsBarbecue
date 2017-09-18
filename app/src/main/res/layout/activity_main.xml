@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="hr.i2petrovicetfos.letsbarbecue.MainActivity"
+    android:background="@color/layoutColor">
+
+
+    <TextView
+        android:id="@+id/tvNaslovAplikacije"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:text="@string/naslov_aplikacije"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/ivNaslovnaSlika"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:layout_below="@+id/tvNaslovAplikacije"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        app:srcCompat="@drawable/mainbackground" />
+
+    <Button
+        android:id="@+id/bKreirajDogadaj"
+        android:layout_width="@dimen/wide_button"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivNaslovnaSlika"
+        android:layout_centerHorizontal="true"
+        android:background="@color/buttonColor"
+        android:onClick="bKreirajDogadaj"
+        android:text="@string/button_kreiraj_dogadaj_tekst"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/bPregledDogadaja"
+        android:layout_width="@dimen/wide_button"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bKreirajDogadaj"
+        android:layout_alignStart="@+id/bKreirajDogadaj"
+        android:layout_below="@+id/bKreirajDogadaj"
+        android:layout_marginTop="13dp"
+        android:background="@color/buttonColor"
+        android:onClick="bPregledDogadaja"
+        android:text="@string/button_pregled_dogadaja_tekst"
+        android:textColor="@color/white" />
+</RelativeLayout>

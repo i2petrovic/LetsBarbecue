@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "755372733542",
+    "firebase_url": "https://letsbarbecue-70def.firebaseio.com",
+    "project_id": "letsbarbecue-70def",
+    "storage_bucket": "letsbarbecue-70def.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:755372733542:android:6cfe276c07a76b26",
+        "android_client_info": {
+          "package_name": "hr.i2petrovicetfos.letsbarbecue"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "755372733542-i5qlhe8uoaj9g81ceejtgd5b9ufj3igh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "hr.i2petrovicetfos.letsbarbecue",
+            "certificate_hash": "5481ed3223a209160fa896125e75f47f62bab6b6"
+          }
+        },
+        {
+          "client_id": "755372733542-a5h0p9q02vpofj261usafdpk1rt687n9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfjRsdEwbUkpJzdzYt6W2HnStusXiw1S4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "755372733542-a5h0p9q02vpofj261usafdpk1rt687n9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layoutColor">
+
+
+    <TextView
+        android:id="@+id/tvOpisPocetnogZaslona"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:text="@string/opis_pocetne"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/etVrijeme"
+        android:layout_alignStart="@+id/etVrijeme" />
+
+    <EditText
+        android:id="@+id/etImeDogagaja"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tvOpisPocetnogZaslona"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Dajte ime dogadaju:"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/etDatum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Datum: (format - DD.MM.YYYY)"
+        android:inputType="date"
+        android:layout_below="@+id/etImeDogagaja"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/etVrijeme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etDatum"
+        android:layout_alignStart="@+id/etDatum"
+        android:layout_below="@+id/etDatum"
+        android:layout_margin="5dp"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="Vrijeme Pocetka: (format - HH:MM)"
+        android:inputType="time" />
+
+    <EditText
+        android:id="@+id/etPoruka"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etVrijeme"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="Osobna Poruka o Dogadaju:"
+        android:inputType="textPersonName" />
+
+    <fragment
+        android:id="@+id/fGoogleMap"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="350dp"
+        android:layout_height="220dp"
+        android:layout_alignLeft="@+id/tvOpisPocetnogZaslona"
+        android:layout_alignStart="@+id/tvOpisPocetnogZaslona"
+        android:layout_below="@+id/etPoruka" />
+
+    <Button
+        android:id="@+id/bUnosInformacija"
+        android:layout_width="@dimen/wide_button"
+        android:layout_height="wrap_content"
+        android:background="@color/buttonColor"
+        android:onClick="bUnosInformacija"
+        android:text="Unesi Informacije"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>
